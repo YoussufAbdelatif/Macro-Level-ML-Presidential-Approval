@@ -1,0 +1,7 @@
+Guide to Codes:
+
+The main code "1046495_YA_MA_RCode_complete" contains all the necessary code elements, but not all sections can be executed on a personal computer (PC). For segments indicated by "HPC" until "HPC End," the High-Performance Computing (HPC) "JustHPC" system was utilized for computations. The R codes employed for the HPC are provided separately. Results obtained on the HPC were saved as excel files, downloaded, and re-imported to the R running on the PC using the main code.
+
+R codes run on the HPC include three different codes for variable selection, as well as individual R codes for each LSTM specification, within the subfolders of the "LSTM Forecasts" folder. 
+
+To execute these separate R codes on the HPC, a Slurm script was required. The Slurm script template has been uploaded. The only variable that was adjusted between estimations in the Slurm script is the name of the R code and the number of arrays.
